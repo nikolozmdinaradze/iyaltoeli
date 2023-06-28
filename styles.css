@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #828282;
+}
+h1{
+    color: #FFF;
+    font-size: 30px;
+    font-family: Inknut Antiqua;
+    padding: 30px 15px 70px 15px;
+    line-height: 1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search_field{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    border-radius: 50px;
+    background: #D9D9D9;
+    padding: 0px 22px;
+    position: relative;
+    
+
+}
+
+.search_field1{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+
+.search{
+    border: none;
+    background-color: inherit;
+    border: 0;
+    outline: none;
+    flex: 1;
+    padding: 2px 0px;
+}
+
+.search_field img{
+    width: 30px;
+    height: 30px;
+}
+
+
+input[type="text"]
+{
+    color: #000000;
+    font-size: 15px;
+    font-family: Inknut Antiqua;
+    overflow: auto;
+}
+
+button{
+    border-radius: 50px;
+    background: #D9D9D9;
+    color: #000;
+    font-family: Inknut Antiqua;
+    font-size: 22px;
+    border: 0;
+    font-weight:540;
+    letter-spacing: 1px;
+    padding:0px 60px;
+    cursor: pointer;
+}
+
+span{
+    padding: 20px;
+    background-image: url(Ellipse.svg);
+    position: absolute;
+    right: -60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+@media screen and (max-width: 600px) {
+    .search_field {
+      width: 80%;
+    }
+    h1{
+        padding: 15px;
+    }
+    span{
+        display: none;
+    }
+  }
+  
+@media screen and (max-width: 450px) {
+    .icon{
+        display: none;
+    }
+    .search_field{
+        width: 90%;
+    }
+
+  }
